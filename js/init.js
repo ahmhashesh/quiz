@@ -35,7 +35,7 @@
 		resizeLoaderFunc();
 	 });
 	 resizeLoaderFunc();
-	 checkBrowser();
+ 	 checkBrowser();
 });
 
 /*!
@@ -67,13 +67,15 @@ function checkBrowser(){
 	  browserSupport=true;
 	}
 	
-	if(browserSupport){
-		if(!isLoaded){
-			isLoaded=true;
-			initPreload();
-		}
-	}else{
-		//browser not support
-		$('#notSupportHolder').show();
-	}
+	isLoaded=true;
+	initPreload();
+	// if(browserSupport){
+	// 	if(!isLoaded){
+	// 		isLoaded=true;
+	// 		initPreload();
+	// 	}
+	// }else{
+	// 	//browser not support
+	// 	$('#notSupportHolder').show();
+	// }
 }
